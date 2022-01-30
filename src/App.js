@@ -24,7 +24,7 @@ function App() {
 ]
   return (
     <div className="App">
-       <h2>Book Search Tool using OPEN API  </h2> 
+       <h2>Book Search Tool using OpenLibrary API  </h2> 
       <Search/>  
       <Books books = {someBooks}/>
     </div>

@@ -3,10 +3,16 @@ import './Search.css'
 
 
 const Search = () => {
-    // const [searchedTerm, setSearchedTerm] = useState()
+
+    const [searchedBook, setSearchedBook] = useState('')
+    const bookSearchHandler = (event) => {
+        event.preventDefault();
+        setSearchedBook(event.target.value)
+    }
   return <div>
       <form className='search-form'>
-          <input placeholder='Search a book title' ></input>
+          <label>Search For Book:  </label>
+          <input placeholder='book title' type="text" onChange={bookSearchHandler}></input>
           <button>Search</button>
       </form>
       
